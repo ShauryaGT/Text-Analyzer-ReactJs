@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -34,5 +34,38 @@
   }
   to {
     transform: rotate(360deg);
+  }
+} */
+.mrr {
+  margin-right: 12px;
+}
+.allert{
+  justify-content: end;
+  position: absolute;
+  right: 0px;
+  top: 70px;  
+  /* border: 1px solid black; */
+  height: 80px;
+  padding: 10px 0px;
+  overflow-y: scroll; 
+}
+.allert::-webkit-scrollbar {
+  display: none;
+}
+.mrt {
+  margin-top: 100px;
+}
+.newaddition {
+  animation-name: scrolldown;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+.invisible { display: none; }
+@keyframes scrolldown {
+  from {
+    margin-top : -75px;
+  }
+  to {
+    margin-top: 0px;
   }
 }
