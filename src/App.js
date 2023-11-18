@@ -5,7 +5,7 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import React, {useState} from 'react';
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,  
   Route,
   Link,
@@ -45,7 +45,7 @@ function App() {
     }, 3000);
   };
   return (    
-    <HashRouter basename='/'>
+    <BrowserRouter basename='/Text-Analyzer'>
       <div>
         <Navbar title="Text Analytics" changeMode={changeMode} mode={mode}/>     
         {/* <div className="container my-3">
@@ -60,7 +60,7 @@ function App() {
           <TextForm heading="Enter the Text to analyse below" mode={mode}/>
         </div> */}
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
